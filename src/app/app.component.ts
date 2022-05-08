@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { rawData } from './components/data';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'humber-assignment-1';
   showModal = false;
+  public products = rawData;
 
   onCardClick() {
     this.showModal = true;

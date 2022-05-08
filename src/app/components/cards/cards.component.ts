@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RawProductData } from '../modal';
 
 @Component({
@@ -9,8 +9,14 @@ import { RawProductData } from '../modal';
 
 export class CardsComponent implements OnInit {
   @Input() products: RawProductData[] | any;
+  @Output() productClicked: EventEmitter<RawProductData> = new EventEmitter<RawProductData>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onCardClick(product: RawProductData) {
+    this.productClicked.emit(product);
   }
 }

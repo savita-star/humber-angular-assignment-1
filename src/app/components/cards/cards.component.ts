@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { RawProductData } from '../modal';
+import { RawProductData } from '../models/raw-product-data.interface';
 
 @Component({
   selector: 'cards',
@@ -7,7 +7,7 @@ import { RawProductData } from '../modal';
   styleUrls: ['./cards.component.scss']
 })
 
-export class CardsComponent implements OnInit {
+export class CardsComponent  implements OnInit {
   @Input() products: RawProductData[] | any;
   @Output() productClicked: EventEmitter<RawProductData> = new EventEmitter<RawProductData>();
 

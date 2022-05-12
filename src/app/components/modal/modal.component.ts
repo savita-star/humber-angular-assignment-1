@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { RawProductData } from '../modal';
+import { RawProductData } from '../models/raw-product-data.interface';
 
 @Component({
   selector: 'modal',

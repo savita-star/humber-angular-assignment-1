@@ -1,4 +1,4 @@
-import { RawProductData } from './modal';
+import { RawProductData } from './raw-product-data.interface';
 
 export const rawData: RawProductData[] = [
   {

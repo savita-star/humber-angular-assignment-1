@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { rawData } from './components/data';
-import { RawProductData } from './components/modal';
+import { rawData } from './components/models/data';
+import { RawProductData } from './components/models/raw-product-data.interface';
 
 @Component({
   selector: 'app-root',
